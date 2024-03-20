@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics.Metrics;
 using System.Threading.Channels;
 
 namespace Holiday_Task
@@ -7,6 +8,7 @@ namespace Holiday_Task
     {
         static void Main(string[] args)
         {
+
             #region Task1
             //Console.WriteLine(ReverseSentence());
             #endregion
@@ -17,9 +19,15 @@ namespace Holiday_Task
             #endregion
 
 
+            #region Task3
+            //SameLetters();           
+            #endregion
+
+
             #region Task4
             //Console.WriteLine(PolindromeWord());
             #endregion
+
         }
 
         #region Task1
@@ -59,6 +67,39 @@ namespace Holiday_Task
         //        num=num/10;                               
         //    }
         //    return reverseNumber;
+        //}
+        #endregion
+
+        
+        #region Task3
+
+        //static void SameLetters()
+        //{
+        //    Console.WriteLine("Zehmet olmasa cumle daxil edin:");
+        //    string sentence = Console.ReadLine();
+        //    string newStr = sentence.Replace(" ", "");
+        //    for (int i = 0; i < newStr.Length; i++)
+        //    {                                                           
+        //        int count = 0;
+        //        bool CheckLetter = false;
+        //        for (int j = 0; j < newStr.Length; j++)
+        //        {
+        //            if (newStr[i] == newStr[j])                    
+        //            {
+        //                if (i < j)
+        //                {
+        //                    CheckLetter = true;
+        //                    break;
+        //                }
+        //                count++;
+        //            }
+        //        }
+        //        if (!CheckLetter)
+        //        {
+        //            Console.WriteLine($"{newStr[i]}=>{count}");
+        //        }
+        //    }
+           
         //}
         #endregion
 
